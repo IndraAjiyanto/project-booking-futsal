@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/custom.css">
-    <link rel="stylesheet" href="/CSS/formbooking.css">
+    <link rel="stylesheet" href="../CSS/custom.css">
+    <link rel="stylesheet" href="../CSS/formbooking.css">
     <title>Document</title>
 </head>
 <body>
@@ -48,21 +48,38 @@
         <input type="date" >
   
         <label>Waktu:</label>
-        <input type="time" >
+        <select id="wkt" name="service" >
+          <option >08.00 - 09.00 WIB</option>
+          <option >09.00 - 10.00 WIB</option>
+          <option >10.00 - 11.00 WIB</option>
+          <option >11.00 - 12.00 WIB</option>
+          <option >12.00 - 13.00 WIB</option>
+          <option >13.00 - 14.00 WIB</option>
+          <option >14.00 - 15.00 WIB</option>
+          <option >15.00 - 16.00 WIB</option>
+          <option >16.00 - 17.00 WIB</option>
+          <option >17.00 - 18.00 WIB</option>
+          <option >18.00 - 19.00 WIB</option>
+          <option >19.00 - 20.00 WIB</option>
+          <option >20.00 - 21.00 WIB</option>
+          <option >21.00 - 22.00 WIB</option>
+        </select>
   
         <label>Lapangan:</label>
-        <select id="service" name="service">
-          <option value="service1">Lapangan 1</option>
-          <option value="service2">Lapangan 2</option>
-          <option value="service3">Lapangan 3</option>
+        <select id="jmlLap" name="service" >
+          <option >Lapangan 1</option>
+          <option >Lapangan 2</option>
+          <option >Lapangan 3</option>
         </select>
 
         <label>Total Harga:</label>
         <input type="text" id="name" name="name">
         
-        <button type="submit">Book Now</button>
+        <button type="submit" onclick="addBooking()" value="tambah">Book Now</button>
       </form>
     </div>
   </div>
+  <script src="JS/form.js">
+  </script>
 </body>
 </html>
